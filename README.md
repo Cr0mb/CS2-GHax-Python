@@ -1,4 +1,57 @@
 # CS2-Cheat-Python V1.8 Update
+V1.9
+
+The entity class was the only thing needed to be updated for the gameScene, as well as the links for the a2x dumper.
+
+I also went ahead and expanded the offset dictionary, so you guys can go ahead and try to make an aimbot or no recoil and such
+
+```
+## UPDATE
+ 
+class Entity:
+    def __init__(self, pointer, pawnPointer, process):
+        self.pointer = pointer
+        self.pawnPointer = pawnPointer
+        self.process = process
+        self.pos2d = None
+        self.headPos2d = None
+ 
+    def Health(self):
+        return pw_module.r_int(self.process, self.pawnPointer + Offsets.m_iHealth)
+ 
+    def Team(self):
+        return pw_module.r_int(self.process, self.pawnPointer + Offsets.m_iTeamNum)
+ 
+    def Pos(self):
+        return pw_module.r_vec3(self.process, self.pawnPointer + Offsets.m_vOldOrigin)
+ 
+    def Name(self):
+        player_name = pw_module.r_string(self.process, self.pointer + Offsets.m_iszPlayerName, 32)
+        return player_name.split("\x00")[0]
+ 
+    def BonePos(self, index):
+        # Get the address of the game scene
+        gameScene = pw_module.r_int64(self.process, self.pawnPointer + Offsets.m_pGameSceneNode)
+        
+        # Get the bone array pointer from the game scene
+        boneArrayPointer = pw_module.r_int64(self.process, gameScene + Offsets.m_pBoneArray)
+        
+        # Calculate the bone position and return it
+        return pw_module.r_vec3(self.process, boneArrayPointer + index * 32)
+ 
+ 
+    def Wts(self, matrix):
+        try:
+            self.pos2d = pw_module.world_to_screen(matrix, self.Pos(), 1)
+            self.headPos2d = pw_module.world_to_screen(matrix, self.BonePos(6), 1)
+        except:
+            return False
+ 
+        return True
+ 
+######
+```
+
 V1.8
 CS2 Configurable Wallhack &amp; Triggerbot with GUI Config Editor. Customize ESP features &amp; triggerbot settings easily. Supports dynamic config updates.
 
