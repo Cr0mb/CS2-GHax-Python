@@ -1,4 +1,8 @@
 # CS2-Cheat-Python V1.8 Update
+
+> If you don't have Python installed, the .exe binary release will still work for you
+
+
 V1.9
 
 The entity class was the only thing needed to be updated for the gameScene, as well as the links for the a2x dumper.
