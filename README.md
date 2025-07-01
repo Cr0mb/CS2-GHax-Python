@@ -1,15 +1,19 @@
-
 # CS2 Python Cheat Features
 
-## NEW UI
+## New UI Preview
 
-![UI Screenshot 1](https://i.imgur.com/HlRGsOU.png)  
-![UI Screenshot 2](https://i.imgur.com/aGdY35U.png)
+<p align="center">
+  <img src="https://i.imgur.com/HlRGsOU.png" alt="Main UI Screenshot" width="600"/>
+</p>
+
+---
+
+## 🔧 Version 2.0
+
+> 🗓️ **Updated:** 6/30/2025
 
 ```python
 # V2.0
-
-# <!> UPDATED FEATURES <!> 6/30/2025
 
 - Updated cheat for game
 - Fixed triggerbot performance
