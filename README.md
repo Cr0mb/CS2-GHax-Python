@@ -1,6 +1,4 @@
-Here is your BBCode post fully converted into proper **Markdown** syntax for a GitHub README:
 
-````markdown
 # CS2 Python Cheat Features
 
 ## NEW UI
@@ -16,7 +14,7 @@ Here is your BBCode post fully converted into proper **Markdown** syntax for a G
 - Updated cheat for game
 - Fixed triggerbot performance
 - Changed UI
-````
+```
 
 ```python
 # V1.9
@@ -138,57 +136,57 @@ V1.3
 
 ## Features List
 
-* watermark
-* boxesp
-* healthbar
-* nameesp
-* healthesp
-* headesp
-* skeletonesp
-* circleboneesp
-* squareboneesp
-* lineEsp
-* crosshair
-* enemyOnly
-* Triggerbot
-* triggerbotOnSameTeam
-* enemycolor
-* teamcolor
-* headcolor
-* circlebonecolor
-* squarebonecolor
-* lineColor
-* namecolor
-* healthcolor
-* skeletoncolor
-* boxbackground
-* headshape
-* namesize
-* healthsize
-* triggerKey
+- watermark  
+- boxesp  
+- healthbar  
+- nameesp  
+- healthesp  
+- headesp  
+- skeletonesp  
+- circleboneesp  
+- squareboneesp  
+- lineEsp  
+- crosshair  
+- enemyOnly  
+- Triggerbot  
+- triggerbotOnSameTeam  
+- enemycolor  
+- teamcolor  
+- headcolor  
+- circlebonecolor  
+- squarebonecolor  
+- lineColor  
+- namecolor  
+- healthcolor  
+- skeletoncolor  
+- boxbackground  
+- headshape  
+- namesize  
+- healthsize  
+- triggerKey
 
 ## Usage Instructions
 
-1. Ensure **Python** is installed.
+1. Ensure **Python** is installed.  
 2. Run:
 
 ```bash
 python GHax.py
 ```
 
-3. Use the GUI Config Editor to customize settings.
+3. Use the GUI Config Editor to customize settings.  
 4. Enjoy cheating skids!
 
 ---
 
 ## Downloads
 
-* [V1.4](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44694)
-* [V1.5](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44911)
-* [V1.7](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44961)
-* [V1.8](https://www.unknowncheats.me/forum/downloads.php?do=file&id=45009)
-* [V1.9](https://www.unknowncheats.me/forum/downloads.php?do=file&id=48333)
-* [V2.0 (Waiting for Approval)](https://www.unknowncheats.me/forum/downloads.php?do=file&id=50285)
+- [V1.4](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44694)  
+- [V1.5](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44911)  
+- [V1.7](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44961)  
+- [V1.8](https://www.unknowncheats.me/forum/downloads.php?do=file&id=45009)  
+- [V1.9](https://www.unknowncheats.me/forum/downloads.php?do=file&id=48333)  
+- [V2.0 (Waiting for Approval)](https://www.unknowncheats.me/forum/downloads.php?do=file&id=50285)
 
 To launch the cheat from CMD:
 
@@ -205,7 +203,7 @@ pip install keyboard requests pymem pyMeow pynput pyqt5 pywin32
 
 > **Note**: If `pyMeow` throws an import error despite being installed via pip:
 
-1. Download directly from:
+1. Download directly from:  
    [https://github.com/qb-0/pyMeow/releases/tag/1.73.42](https://github.com/qb-0/pyMeow/releases/tag/1.73.42)
 
 2. In CMD, navigate to the folder containing `setup.py`, then run:
