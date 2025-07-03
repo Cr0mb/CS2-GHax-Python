@@ -8,6 +8,32 @@
 
 ---
 
+## 🔧 Version 2.1
+
+> 🗓️ **Updated:** 7/2/2025
+
+```markdown
+- Replaced separate "CT Side Only" and "T Side Only" ESP toggles with a unified team check logic:
+  * "Enemy Only" shows ESP only for opposing team members.
+  * "Team Only" shows ESP only for teammates.
+
+- Fixed issue where the watermark would disappear when looking in certain directions.
+  * Root cause: `pw_module.end_drawing()` was conditionally called inside the ESP loop,
+    causing it to be skipped if no entities were drawn (e.g., looking at empty space).
+
+- Refactored `WallHack.Render()` to call `pw_module.end_drawing()` exactly once,
+  after processing all entities, ensuring proper rendering lifecycle every frame.
+
+- This fix prevents visual glitches like the watermark vanishing or incomplete overlays
+  when no entities are visible.
+
+- Added FOV changer slider to GUI (default value: 90).
+- Added disclaimer informing that FOV changes write directly to game memory.
+- Slider updates the FOV value in real-time during gameplay.
+```
+
+---
+
 ## 🔧 Version 2.0
 
 > 🗓️ **Updated:** 6/30/2025
