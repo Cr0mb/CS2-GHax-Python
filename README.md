@@ -229,14 +229,21 @@ python GHax.py
 
 ---
 
-## Downloads
+**Downloads**  
+[Download V1.4](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44694) |  
+[Download V1.5](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44911) |  
+[Download V1.7](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44961) |  
+[Download V1.8](https://www.unknowncheats.me/forum/downloads.php?do=file&id=45009) |  
+[Download V1.9](https://www.unknowncheats.me/forum/downloads.php?do=file&id=48333) |  
+[Download V2.0](https://www.unknowncheats.me/forum/downloads.php?do=file&id=50285) _(waiting for approval)_  
+[Download V2.1](https://www.unknowncheats.me/forum/downloads.php?do=file&id=50315) _(waiting for approval)_  
+[Download V2.2](https://www.unknowncheats.me/forum/downloads.php?do=file&id=50335) _(waiting for approval)_
 
-- [V1.4](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44694)  
-- [V1.5](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44911)  
-- [V1.7](https://www.unknowncheats.me/forum/downloads.php?do=file&id=44961)  
-- [V1.8](https://www.unknowncheats.me/forum/downloads.php?do=file&id=45009)  
-- [V1.9](https://www.unknowncheats.me/forum/downloads.php?do=file&id=48333)  
-- [V2.0 (Waiting for Approval)](https://www.unknowncheats.me/forum/downloads.php?do=file&id=50285)
+**Showcases**  
+[V2.0 Showcase](https://www.youtube.com/watch?v=ky462PVNFhM&t=586s)  
+[V2.1 Showcase](https://www.youtube.com/watch?v=oZ-TfVf9iqI)  
+[V2.2 Showcase](https://www.youtube.com/watch?v=pDBap2KieU8)
+
 
 To launch the cheat from CMD:
 
