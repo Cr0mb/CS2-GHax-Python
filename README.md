@@ -8,6 +8,26 @@
 
 ---
 
+## 🔧 Version 2.2
+
+> 🗓️ **Updated:** 7/3/2025
+
+```markdown
+- Separated offsets into their own dedicated script/module for cleaner structure.
+
+- Created a Legit Aimbot with recoil control system.
+  * Logic contained in its own separate script for modularity.
+
+- Modularized the project:
+  * Scripts are now separated by function (e.g., `GHax.py`, `Aim_Recoil.py`).
+  * Improves code organization and readability.
+
+- Current structure requires `GHax.py` and `Aim_Recoil.py` to be run separately.
+  * Full multiprocessing integration coming in Version 2.3.
+```
+
+---
+
 ## 🔧 Version 2.1
 
 > 🗓️ **Updated:** 7/2/2025
