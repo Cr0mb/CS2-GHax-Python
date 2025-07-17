@@ -1,12 +1,85 @@
 # CS2 Python Cheat Features
 
 ## New UI Preview
+[Video Showcase](https://www.youtube.com/watch?v=hjZrGECIhu4)
 
-<p align="center">
-  <img src="https://i.imgur.com/HlRGsOU.png" alt="Main UI Screenshot" width="600"/>
-</p>
+![Image](https://i.imgur.com/XiEJzhV.png)
 
 ---
+
+```plaintext
+# V3.0
+# Changed aimbot to external mouse movement instead of writing view angles.
+# Added no flash and spectator list
+# Added armor bar and armor esp
+````
+
+```plaintext
+# V2.7
+# Added weapon esp
+# Moved weapon check directly into aimbot.py
+# Added bomb esp
+```
+
+```plaintext
+# V2.6
+# Added fov overlay color changed
+# Added simple weapon check for aimbot (no aim on knife/nade)
+# Aim at closest bone to crosshair added to aimbot
+```
+
+```plaintext
+# V2.5
+# Complete GUI Overhaul
+# Custom Color window
+# Added configs
+# Added RCS Control toggle
+# Added Render Refresh Rate Sync Toggle
+# Added triggerbot always on
+```
+
+```plaintext
+# V2.4
+# The aimbot learns from the differences between the angles it actually moves to and what it intended to move to, based on your mouse movements during aiming.
+# It stores these small delta angle adjustments linked to quantized angles in a dictionary (learning_data), which it saves to a JSON file so it can improve over time
+# across sessions.
+
+# Velocity Prediction:
+# To improve aiming accuracy, the target's current velocity is read and used to predict
+# where the target will be shortly (ahead by a small prediction time). This predicted position
+# compensates for target movement, allowing the aimbot to lead shots instead of aiming at
+# the target's current location, increasing hit probability especially on moving targets.
+```
+
+```plaintext
+V2.3
+
+<!> UPDATED FEATURES <!> 7/6/2025
+
+- Separated script into modules further.
+
+- Added aimbot & recoil control with extensive customization options.
+
+- Added Glow ESP.
+
+- Added cooldown feature to TriggerBot.
+
+- Added BHop functionality (works very well).
+
+- Added show FOV overlay for aimbot (separate overlay window).
+
+- Added process handler support for client.dll.
+
+- Added hardcoded offsets (can be updated using update_offsets.py).
+
+- Added aimbot toggle bone; due to messed up bone indices, added downward_offset instead of fixing (kek).
+
+- Made offsets load locally instead of fetching from a2x's CS2 Dumper.
+
+- All features are completely customizable in pyqt5 gui.
+
+- Removed initial weapon check from b2.3 (broken after update?)
+```
 
 ## 🔧 Version 2.2
 
