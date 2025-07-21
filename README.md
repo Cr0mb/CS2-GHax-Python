@@ -6,6 +6,45 @@
 ![Image](https://i.imgur.com/XiEJzhV.png)
 
 ---
+```plaintext
+# V3.2
+# Updates - TriggerBot Memory Read Fixes
+
+# - Added early checks for invalid or zero pointers before reading memory to avoid access violations
+# - Wrapped critical memory reads in try/except blocks to safely handle partial read errors (Error 299)
+# - Added early returns when local player or entity pointers are not valid (e.g., in main menu)
+# - Prevented triggerbot logic from running if game window is not focused or player is not in-game
+# - Reduced spamming of memory read exceptions by skipping unsafe reads outside of active match
+
+# Updates - Spectator List Fixes
+# - added safe read wrappers to handle partial read errors (Error 299) gracefully
+# - wrapped all memory reads in try-except blocks to prevent crashes from invalid pointers
+# - used cached variables and fallback defaults to avoid accessing null or invalid memory
+# - added filtering to skip invalid or self-controller entities early in the loop
+# - error logging to identify problematic memory reads without spamming errors
+# - ensured robust handling of pointer chains for online spectator detection
+# - maintained 1-second caching
+
+# Updated distance ESP to display infront of the box esp for easier readibility
+```
+
+```plaintext
+# V3.1
+# Added collections.deque for learning data storage
+# Cached pymem read funcs and math funcs in __init__
+# Learning data uses deque with maxlen=50
+# load_learning: convert keys to tuple, values to deque
+# save_learning: convert deque to list, keys to string
+# get_entity: cached local_player_controller read
+# get_current_bone_index: cache velocity vector outside loop
+# run():
+# - reduced sleep_base to 0.005
+# - dynamic recoil scale based on shots_fired
+# - smoothing jitter reduced, max smoothing 0.25
+# - mouse movement clamped to ±15
+# - added learning correction clamping and locking
+# - improved exception handling with shorter sleep
+```
 
 ```plaintext
 # V3.0
