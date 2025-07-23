@@ -289,36 +289,94 @@ Class Updates:
 </details>
 
 
-## Features List
+# GHax V3.1 Feature List
 
-- watermark  
-- boxesp  
-- healthbar  
-- nameesp  
-- healthesp  
-- headesp  
-- skeletonesp  
-- circleboneesp  
-- squareboneesp  
-- lineEsp  
-- crosshair  
-- enemyOnly  
-- Triggerbot  
-- triggerbotOnSameTeam  
-- enemycolor  
-- teamcolor  
-- headcolor  
-- circlebonecolor  
-- squarebonecolor  
-- lineColor  
-- namecolor  
-- healthcolor  
-- skeletoncolor  
-- boxbackground  
-- headshape  
-- namesize  
-- healthsize  
-- triggerKey
+<details>
+<summary><strong>ESP Visuals</strong></summary>
+
+| Feature           | Feature           | Feature             | Feature            |
+|-------------------|-------------------|----------------------|---------------------|
+| Watermark         | Box ESP           | Line ESP            | Skeleton ESP       |
+| Bone ESP          | Head ESP          | Name ESP            | Health ESP         |
+| Health Bar ESP    | Armor ESP         | Armor Bar ESP       | Distance ESP       |
+| Weapon ESP        | Bomb ESP          | Flash ESP           | Scoped ESP         |
+| Enemy Only        | Team Only         | Spectator List      | Radar Overlay      |
+
+</details>
+
+<details>
+<summary><strong>TriggerBot</strong></summary>
+
+| Feature               | Description                   |
+|------------------------|-------------------------------|
+| Shoot Team            | Trigger on teammates           |
+| Always On             | Fire without holding a key     |
+| Set Trigger Key       | Custom keybind for trigger     |
+| Trigger Cooldown      | Delay between shots            |
+
+</details>
+
+<details>
+<summary><strong>Colors</strong></summary>
+
+| Feature                | Feature               | Feature               |
+|------------------------|------------------------|------------------------|
+| Box Enemy Color        | Box Team Color         | Box Background Color   |
+| Bone ESP Color         | Head ESP Color         | Skeleton ESP Color     |
+| FOV Overlay Color      | Line ESP Color         | Crosshair Color        |
+| Font Colors            |                        |                        |
+
+</details>
+
+<details>
+<summary><strong>Misc</strong></summary>
+
+| Feature            | Description                   |
+|---------------------|-------------------------------|
+| BHop               | Auto bunny hop                |
+| Crosshair          | Static on-screen crosshair    |
+| Glow               | Player glow effect            |
+| No Flash           | Block flashbang effect        |
+| FOV Changer        | Custom field of view          |
+| ESP Monitor Sync   | Align ESP to screen resolution|
+
+</details>
+
+<details>
+<summary><strong>Aimbot</strong></summary>
+
+| Feature                  | Description                               |
+|---------------------------|-------------------------------------------|
+| Deathmatch Mode          | Enables aimbot in DM scenarios            |
+| Show FOV                 | Visualize aim field                       |
+| Aim Nearest Bone         | Targets head or chest                     |
+| Aimbot Learning          | Adaptive accuracy over time               |
+| Velocity Prediction      | Predicts moving targets                   |
+| Enable RCS               | Recoil control system                     |
+| Aim FOV                  | Limit aim range                           |
+| Aim Smooth Base          | Base smoothing value                      |
+| Aim Smooth Variation     | Random smoothing to appear legit          |
+| RCS Smooth Base          | Recoil smoothing base                     |
+| RCS Smooth Variation     | Recoil smoothing variance                 |
+| RCS Scale                | Recoil strength factor                    |
+| Stabilize Shots          | Smoother firing movement                  |
+| Target Switch Delay      | Time delay when changing targets          |
+| Aim Start Delay          | Initial aim delay                         |
+| Downward Offset          | Offset aim position vertically            |
+| Target Bone              | Target specific bone (head/chest)         |
+
+</details>
+
+<details>
+<summary><strong>Configs</strong></summary>
+
+| Feature             |
+|----------------------|
+| Save / Reset Configs |
+
+</details>
+
+
 
 ## Usage Instructions
 
