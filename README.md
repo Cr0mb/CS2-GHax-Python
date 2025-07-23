@@ -5,296 +5,289 @@
 
 ![Image](https://i.imgur.com/XiEJzhV.png)
 
+
+# GHax Changelog
 ---
-```plaintext
-# V3.2
-# Updates - TriggerBot Memory Read Fixes
+### **V3.2**
+```
+`<!> UPDATED FEATURES <!> 7/22/2025`
 
-# - Added early checks for invalid or zero pointers before reading memory to avoid access violations
-# - Wrapped critical memory reads in try/except blocks to safely handle partial read errors (Error 299)
-# - Added early returns when local player or entity pointers are not valid (e.g., in main menu)
-# - Prevented triggerbot logic from running if game window is not focused or player is not in-game
-# - Reduced spamming of memory read exceptions by skipping unsafe reads outside of active match
+- TriggerBot Memory Read Fixes:
+  - Added early checks for invalid or zero pointers before reading memory
+  - Wrapped critical memory reads in try/except blocks to safely handle partial read errors (Error 299)
+  - Added early returns when entity/local player pointers are not valid
+  - Prevented triggerbot logic from running if game window is not focused or player is not in-game
+  - Skips unsafe reads outside of active match
 
-# Updates - Spectator List Fixes
-# - added safe read wrappers to handle partial read errors (Error 299) gracefully
-# - wrapped all memory reads in try-except blocks to prevent crashes from invalid pointers
-# - used cached variables and fallback defaults to avoid accessing null or invalid memory
-# - added filtering to skip invalid or self-controller entities early in the loop
-# - error logging to identify problematic memory reads without spamming errors
-# - ensured robust handling of pointer chains for online spectator detection
-# - maintained 1-second caching
+- Spectator List Fixes:
+  - Added safe read wrappers to handle partial read errors (Error 299)
+  - Wrapped all memory reads in try-except blocks
+  - Used cached variables and fallback defaults
+  - Added filtering to skip invalid or self-controller entities early in the loop
+  - Error logging without spamming errors
+  - Ensured handling of pointer chains for online spectator detection
+  - 1 second caching
 
-# Updated distance ESP to display infront of the box esp for easier readibility
+- Distance ESP:
+  - Displayed in front of box ESP for easier readability
 ```
 
-```plaintext
-# V3.1
-# Added collections.deque for learning data storage
-# Cached pymem read funcs and math funcs in __init__
-# Learning data uses deque with maxlen=50
-# load_learning: convert keys to tuple, values to deque
-# save_learning: convert deque to list, keys to string
-# get_entity: cached local_player_controller read
-# get_current_bone_index: cache velocity vector outside loop
-# run():
-# - reduced sleep_base to 0.005
-# - dynamic recoil scale based on shots_fired
-# - smoothing jitter reduced, max smoothing 0.25
-# - mouse movement clamped to ±15
-# - added learning correction clamping and locking
-# - improved exception handling with shorter sleep
+<details>
+<summary>Changelog</summary>
+
+
+### **V3.1**
+
+`<!> UPDATED FEATURES <!> 7/20/2025`
+
 ```
-
-```plaintext
-# V3.0
-# Changed aimbot to external mouse movement instead of writing view angles.
-# Added no flash and spectator list
-# Added armor bar and armor esp
-````
-
-```plaintext
-# V2.7
-# Added weapon esp
-# Moved weapon check directly into aimbot.py
-# Added bomb esp
-```
-
-```plaintext
-# V2.6
-# Added fov overlay color changed
-# Added simple weapon check for aimbot (no aim on knife/nade)
-# Aim at closest bone to crosshair added to aimbot
-```
-
-```plaintext
-# V2.5
-# Complete GUI Overhaul
-# Custom Color window
-# Added configs
-# Added RCS Control toggle
-# Added Render Refresh Rate Sync Toggle
-# Added triggerbot always on
-```
-
-```plaintext
-# V2.4
-# The aimbot learns from the differences between the angles it actually moves to and what it intended to move to, based on your mouse movements during aiming.
-# It stores these small delta angle adjustments linked to quantized angles in a dictionary (learning_data), which it saves to a JSON file so it can improve over time
-# across sessions.
-
-# Velocity Prediction:
-# To improve aiming accuracy, the target's current velocity is read and used to predict
-# where the target will be shortly (ahead by a small prediction time). This predicted position
-# compensates for target movement, allowing the aimbot to lead shots instead of aiming at
-# the target's current location, increasing hit probability especially on moving targets.
-```
-
-```plaintext
-V2.3
-
-<!> UPDATED FEATURES <!> 7/6/2025
-
-- Separated script into modules further.
-
-- Added aimbot & recoil control with extensive customization options.
-
-- Added Glow ESP.
-
-- Added cooldown feature to TriggerBot.
-
-- Added BHop functionality (works very well).
-
-- Added show FOV overlay for aimbot (separate overlay window).
-
-- Added process handler support for client.dll.
-
-- Added hardcoded offsets (can be updated using update_offsets.py).
-
-- Added aimbot toggle bone; due to messed up bone indices, added downward_offset instead of fixing (kek).
-
-- Made offsets load locally instead of fetching from a2x's CS2 Dumper.
-
-- All features are completely customizable in pyqt5 gui.
-
-- Removed initial weapon check from b2.3 (broken after update?)
-```
-
-## 🔧 Version 2.2
-
-> 🗓️ **Updated:** 7/3/2025
-
-```markdown
-- Separated offsets into their own dedicated script/module for cleaner structure.
-
-- Created a Legit Aimbot with recoil control system.
-  * Logic contained in its own separate script for modularity.
-
-- Modularized the project:
-  * Scripts are now separated by function (e.g., `GHax.py`, `Aim_Recoil.py`).
-  * Improves code organization and readability.
-
-- Current structure requires `GHax.py` and `Aim_Recoil.py` to be run separately.
-  * Full multiprocessing integration coming in Version 2.3.
+- Aimbot:
+  - Added collections.deque for learning data storage
+  - Cached pymem read funcs and math funcs in __init__
+  - Learning data uses deque with maxlen=50
+  - load_learning: convert keys to tuple, values to deque
+  - save_learning: convert deque to list, keys to string
+  - get_entity: cached local_player_controller read
+  - get_current_bone_index: cache velocity vector outside loop
+  - run():
+    - Reduced sleep_base to 0.005
+    - Dynamic recoil scale based on shots_fired
+    - Smoothing jitter reduced, max smoothing 0.25
+    - Mouse movement clamped to ±15
+    - Added learning correction clamping and locking
+    - Improved exception handling with shorter sleep
 ```
 
 ---
 
-## 🔧 Version 2.1
+### **V3.0**
 
-> 🗓️ **Updated:** 7/2/2025
-
-```markdown
-- Replaced separate "CT Side Only" and "T Side Only" ESP toggles with a unified team check logic:
-  * "Enemy Only" shows ESP only for opposing team members.
-  * "Team Only" shows ESP only for teammates.
-
-- Fixed issue where the watermark would disappear when looking in certain directions.
-  * Root cause: `pw_module.end_drawing()` was conditionally called inside the ESP loop,
-    causing it to be skipped if no entities were drawn (e.g., looking at empty space).
-
-- Refactored `WallHack.Render()` to call `pw_module.end_drawing()` exactly once,
-  after processing all entities, ensuring proper rendering lifecycle every frame.
-
-- This fix prevents visual glitches like the watermark vanishing or incomplete overlays
-  when no entities are visible.
-
-- Added FOV changer slider to GUI (default value: 90).
-- Added disclaimer informing that FOV changes write directly to game memory.
-- Slider updates the FOV value in real-time during gameplay.
+```txt
+- Changed aimbot to external mouse movement instead of writing view angles
+- Added no flash and spectator list
+- Added armor bar and armor ESP
 ```
 
 ---
 
-## 🔧 Version 2.0
+### **V2.7**
 
-> 🗓️ **Updated:** 6/30/2025
+```txt
+- Added weapon ESP
+- Moved weapon check directly into aimbot.py
+- Added bomb ESP
+```
 
-```python
-# V2.0
+---
 
-- Updated cheat for game
+### **V2.6**
+
+```txt
+- Added FOV overlay color change
+- Added simple weapon check for aimbot (no aim on knife/nade)
+- Aim at closest bone to crosshair added to aimbot
+```
+
+---
+
+### **V2.5**
+
+```txt
+- Complete GUI overhaul
+- Custom color window
+- Added configs
+- Added RCS control toggle
+- Added render refresh rate sync toggle
+- Added triggerbot always on
+```
+
+---
+
+### **V2.4**
+
+```txt
+- Aimbot learning system:
+  - Stores delta angle adjustments linked to quantized angles
+  - Saved across sessions for improvement
+
+- Velocity prediction:
+  - Reads target velocity to predict future position
+  - Improves hit probability for moving targets
+```
+
+---
+
+### **V2.3**
+
+`<!> UPDATED FEATURES <!> 7/6/2025`
+
+```txt
+- Modularization:
+  - Further separated scripts into modules
+
+- Features:
+  - Added aimbot & recoil control with extensive customization
+  - Added Glow ESP
+  - Added cooldown to TriggerBot
+  - Added BHop (very effective)
+  - Added separate FOV overlay window
+  - Added client.dll process handler support
+  - Hardcoded offsets, with update script
+  - Downward offset added due to bone issues
+  - Local offset loading instead of online fetch
+  - Full PyQt5 GUI customization
+  - Removed initial weapon check from b2.3 (broken)
+```
+
+---
+
+### **V2.2**
+
+`<!> UPDATED FEATURES <!> 7/3/2025`
+
+```txt
+- Modularization:
+  - Separated offsets into its own script
+  - Created legit aimbot with recoil control
+
+- Organization:
+  - Files modularized and separated
+  - GHax.py and Aim_Recoil.py must both be run (multiprocessing coming v2.3)
+```
+
+---
+
+### **V2.1**
+
+`<!> UPDATED FEATURES <!> 7/2/2025`
+
+```txt
+- Replaced CT/T Side ESP toggles with:
+  - "Enemy Only" or "Team Only"
+
+- Fixed watermark disappearing bug due to conditional end_drawing()
+
+- WallHack:
+  - end_drawing() now called exactly once per frame
+
+- GUI:
+  - Added FOV changer slider (default 90)
+  - Added disclaimer for memory writing
+  - Real-time slider updates
+```
+
+---
+
+### **V2.0**
+
+`<!> UPDATED FEATURES <!> 6/30/2025`
+
+```txt
+- Updated cheat for game patch
 - Fixed triggerbot performance
-- Changed UI
+- Updated UI
 ```
 
-```python
-# V1.9
+---
 
-# <!> UPDATED FEATURES <!> 5/11/2024
+### **V1.9**
 
-# The entity class was updated for the gameScene and the a2x dumper links.  
-# Expanded offset dictionary for custom aimbot/no recoil development.
+`<!> UPDATED FEATURES <!> 5/11/2024`
 
-class Entity:
-    def __init__(self, pointer, pawnPointer, process):
-        self.pointer = pointer
-        self.pawnPointer = pawnPointer
-        self.process = process
-        self.pos2d = None
-        self.headPos2d = None
+```txt
+- Updated Entity class for new gameScene structure and a2x links
+- Expanded offset dictionary for aimbot/no recoil
 
-    def Health(self):
-        return pw_module.r_int(self.process, self.pawnPointer + Offsets.m_iHealth)
-
-    def Team(self):
-        return pw_module.r_int(self.process, self.pawnPointer + Offsets.m_iTeamNum)
-
-    def Pos(self):
-        return pw_module.r_vec3(self.process, self.pawnPointer + Offsets.m_vOldOrigin)
-
-    def Name(self):
-        player_name = pw_module.r_string(self.process, self.pointer + Offsets.m_iszPlayerName, 32)
-        return player_name.split("\x00")[0]
-
-    def BonePos(self, index):
-        gameScene = pw_module.r_int64(self.process, self.pawnPointer + Offsets.m_pGameSceneNode)
-        boneArrayPointer = pw_module.r_int64(self.process, gameScene + Offsets.m_pBoneArray)
-        return pw_module.r_vec3(self.process, boneArrayPointer + index * 32)
-
-    def Wts(self, matrix):
-        try:
-            self.pos2d = pw_module.world_to_screen(matrix, self.Pos(), 1)
-            self.headPos2d = pw_module.world_to_screen(matrix, self.BonePos(6), 1)
-        except:
-            return False
-        return True
+Class Updates:
+- Health, Team, Pos, Name, BonePos, WTS methods fully implemented with fallback handling
 ```
 
-```text
-V1.8
+---
 
-<!> UPDATED FEATURES <!> 5/11/2024
+### **V1.8**
 
-+ Added TriggerBot  
-+ Added TriggerKey  
-+ Added TriggerTeam  
-+ Keyboard listener for triggerkey with winsound  
-+ Temporarily removed config.json
+`<!> UPDATED FEATURES <!> 5/11/2024`
+
+```txt
+- Added TriggerBot
+- Added TriggerKey and TriggerTeam
+- Keyboard listener with winsound
+- Temporarily removed config.json
 ```
 
-```text
-V1.7
+---
 
-<!> UPDATED FEATURES <!> 5/10/2024
+### **V1.7**
 
-+ Temporarily removed Triggerbot  
-+ Temporarily removed config file  
-+ Fixed bugs disabling all ESP features  
-+ Smoother ESP  
-+ Added PyQt5 menu with easy access options  
-+ Python script can now be compiled with PyInstaller
+`<!> UPDATED FEATURES <!> 5/10/2024`
+
+```txt
+- Temporarily removed TriggerBot and config file
+- Fixed ESP bugs
+- Improved ESP performance
+- Added PyQt5 GUI
+- PyInstaller support added
 ```
 
-```text
-V1.6
+---
 
-<!> UPDATED FEATURES <!> 5/8/2024
+### **V1.6**
 
-+ Fixed wallhack to toggle bounding box and all ESP features independently  
-  - To disable all ESP, set all false and wallhack true or wallhack false then restart  
-  - Setting wallhack false on initialized script causes crash; can be re-enabled  
-+ Added bounding box option with background opacity control
+`<!> UPDATED FEATURES <!> 5/8/2024`
+
+```txt
+- Wallhack:
+  - Toggle bounding box and ESP features independently
+  - Fix for crash on re-enable
+  - Opacity control for bounding box background
 ```
 
-```text
-V1.5
+---
 
-<!> UPDATED FEATURES <!> 5/7/2024
+### **V1.5**
 
-+ Squarebone ESP  
-+ Updated crosshair  
-+ Teamesp changed to enemy-only  
-+ Wallhack no longer renders on local player  
-+ Fixed major ReadProcessMemory error (Error: 299)  
-+ Added name & health text colors  
-+ Improved JSON config parsing  
-+ Removed tkinter GUI (temporarily)
+`<!> UPDATED FEATURES <!> 5/7/2024`
+
+```txt
+- Squarebone ESP
+- Updated crosshair
+- Changed team ESP to enemy-only
+- Wallhack no longer renders on local player
+- Fixed ReadProcessMemory Error 299
+- Added text colors for name & health
+- Improved JSON config parsing
+- Removed tkinter GUI (temporarily)
 ```
 
-```text
-V1.4
+---
 
-<!> UPDATED FEATURES <!> 5/3/2024
+### **V1.4**
 
-+ Added font size options for name and health ESP  
-+ Added circle bone ESP (draws circles on main bones)  
-+ Added skeleton ESP (may cause lag)  
-+ Added color options for circle bone and skeleton  
-+ Added headshape option (square or circle)
+`<!> UPDATED FEATURES <!> 5/3/2024`
+
+```txt
+- Font size options for name/health ESP
+- Circle bone ESP
+- Skeleton ESP (may lag)
+- Color options for new ESP types
+- Headshape toggle (circle/square)
 ```
 
-```text
-V1.3
+---
 
-<!> UPDATED FEATURES <!> 4/23/2024
+### **V1.3**
 
-+ Triggerkey customization dropdown (shift, ctrl, alt, spacebar)  
-+ Added external crosshair (simple "+" sign)  
-+ Added health ESP  
-+ Added name ESP  
-+ Improved watermark with disable option
+`<!> UPDATED FEATURES <!> 4/23/2024`
+
+```txt
+- Triggerkey customization (shift/ctrl/alt/spacebar)
+- External crosshair (+)
+- Health and Name ESP
+- Improved watermark with disable option
 ```
+
+</details>
+
 
 ## Features List
 
