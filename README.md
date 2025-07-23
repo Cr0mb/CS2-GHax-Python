@@ -288,7 +288,7 @@ Class Updates:
 </details>
 
 
-# GHax V3.1 Feature List
+# GHax V3.2 Feature List
 
 <details>
 <summary><strong>ESP Visuals</strong></summary>
@@ -374,3 +374,23 @@ Class Updates:
 | Save / Reset Configs |
 
 </details>
+
+## How to Update Offsets
+- In order to Update offsets you need to use ``update_offsets.py``, which is inside the ``Process`` directory.
+  - Simply run update_offsets.py with the game open and everything is fixed.
+  - Video Tutorial: [https://www.youtube.com/watch?v=q9qbn6WRmms](https://www.youtube.com/watch?v=q9qbn6WRmms)
+ 
+
+## Usage Instructions
+
+1. Ensure Python is installed.
+2. Run
+``python GHax.py``
+
+- To launch the cheat.
+3. Use the GUI Config Editor to customize settings.
+4. Enjoy cheating skids!
+- Menu open / close with INSERT key by default.
+
+
+
