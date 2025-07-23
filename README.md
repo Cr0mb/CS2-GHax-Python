@@ -384,13 +384,51 @@ Class Updates:
 ## Usage Instructions
 
 1. Ensure Python is installed.
-2. Run
-``python GHax.py``
-
-- To launch the cheat.
+2. Run ``python GHax.py`` to launch the cheat.
 3. Use the GUI Config Editor to customize settings.
 4. Enjoy cheating skids!
 - Menu open / close with INSERT key by default.
 
+### IF YOU WANT TO KEEP THIS UNDETECTED
 
+I recommend obfuscating the code using [Python Obfuscator](https://freecodingtools.org/tools/obfuscator/python)
+Not necessary if rebuilding using nuitka.
+You could also obfuscate/build the files using pyarmor:
+```
+pip install pyinstaller pyarmor
+```
+```
+pyarmor gen --pack onefile GHax.py
+```
+Rename the resulting dist/main.exe file and use it.
+
+## BUILD INTO .EXE
+To build into a .exe you will need either Nuitka or PyInstaller.
+PyInstaller is less secure than Nuitka, but Nuitka will cause anti-virus to think it's malware due to it's obfuscation.
+
+- For PyInstaller, you need to add hidden imports to make it into a singular file:
+```
+pip install pyinstaller
+```
+```
+pyinstaller --noconsole --name GHax --onefile --hidden-import=pymem --hidden-import=pymem.process --hidden-import=pyMeow --hidden-import=pynput.mouse --hidden-import=pynput.keyboard --hidden-import=win32gui --hidden-import=win32api --hidden-import=win32con --hidden-import=pywintypes --hidden-import=PyQt5.QtCore --hidden-import=PyQt5.QtGui --hidden-import=PyQt5.QtWidgets --hidden-import=requests --hidden-import=multiprocessing GHaxV3.0.py
+```
+
+- For Nuitka, you will just need to build into one file:
+```
+pip install nuitka
+```
+```
+nuitka --onefile --windows-console-mode=disable --enable-plugin=pyqt5 --msvc=latest GHaxV3.0.py
+```
+
+Make sure you launch cheat through CMD, go into script directory and type "python GHax.py" or "python3 GHax.py". This fixes issue with wallhack and watermark not showing.
+^ Above statement did not fix watermark issues. Fixed this issue by ensuring pw_module.end_drawing() is always called once per frame, even when no entities are drawn.
+
+``pip install keyboard requests pymem pyMeow pynput pyqt5 pywin32``
+- If the cheat says that pyMeow isn't installed correctly even though you installed the pip module, you can install it directly through the source:
+  - Download it here: https://github.com/qb-0/pyMeow/releases/tag/1.73.42
+  - In CMD, navigate to the directory where setup.py is located.
+  - Run: ``pip install .``
+to fully install pyMeow.
 
