@@ -1,9 +1,22 @@
 # CS2 Python Cheat Features
 
-## New UI Preview
-[Video Showcase](https://www.youtube.com/watch?v=hjZrGECIhu4)
+**Videos**
 
-![Image](https://i.imgur.com/XiEJzhV.png)
+- [**V2.0 Showcase:**](https://www.youtube.com/watch?v=ky462PVNFhM&t=586s) https://youtu.be/ky462PVNFhM  
+- [**V2.1 Showcase:**](https://www.youtube.com/watch?v=oZ-TfVf9iqI) https://www.youtube.com/watch?v=oZ-TfVf9iqI  
+- [**V2.2 Showcase:**](https://www.youtube.com/watch?v=pDBap2KieU8) https://www.youtube.com/watch?v=pDBap2KieU8  
+- [**V2.3 Beta Showcase:**](https://www.youtube.com/watch?v=3G2ZPU6SGUg) https://www.youtube.com/watch?v=3G2ZPU6SGUg  
+- [**V2.3 Full Release:**](https://www.youtube.com/watch?v=bwF8vC5Av_w) https://www.youtube.com/watch?v=bwF8vC5Av_w  
+- [**V2.4 Release:**](https://www.youtube.com/watch?v=JA1jtwPHsLE&t=25s) https://www.youtube.com/watch?v=JA1jtwPHsLE&t=25s  
+- [**V3.0 Release:**](https://www.youtube.com/watch?v=hjZrGECIhu4) https://www.youtube.com/watch?v=hjZrGECIhu4  
+
+**GUI**  
+![GUI Image](https://i.imgur.com/XiEJzhV.png)
+
+[V2.3 Image 1](https://i.imgur.com/lnRgX9y.png)  
+[V2.3 Image 2](https://i.imgur.com/76SVSOP.png)  
+[V2.0 Image](https://i.imgur.com/HlRGsOU.png)  
+[Old UI Image](https://i.imgur.com/aGdY35U.png)  
 
 
 # GHax Changelog
