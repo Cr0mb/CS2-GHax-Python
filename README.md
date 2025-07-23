@@ -9,9 +9,8 @@
 # GHax Changelog
 ---
 ### **V3.2**
-```
 `<!> UPDATED FEATURES <!> 7/22/2025`
-
+```
 - TriggerBot Memory Read Fixes:
   - Added early checks for invalid or zero pointers before reading memory
   - Wrapped critical memory reads in try/except blocks to safely handle partial read errors (Error 299)
