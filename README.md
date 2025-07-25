@@ -401,12 +401,17 @@ Class Updates:
 - In order to Update offsets you need to use ``update_offsets.py``, which is inside the ``Process`` directory.
   - Simply run update_offsets.py with the game open and everything is fixed.
   - Video Tutorial: [https://www.youtube.com/watch?v=q9qbn6WRmms](https://www.youtube.com/watch?v=q9qbn6WRmms)
- 
+
+
+ ## V3.3
+Auto-sets up the environment, no manual steps needed except the offset updater. 
+start.py is optional; it installs and applies base64 obfuscation for stealth.
+You can skip it and run GHaxV3_3.py directly if you want.
 
 ## Usage Instructions
 
 1. Ensure Python is installed.
-2. Run ``python GHax.py`` to launch the cheat.
+2. Run ``python start.py`` to launch the cheat. If older than V3.3 launch with GHax.py.
 3. Use the GUI Config Editor to customize settings.
 4. Enjoy cheating skids!
 - Menu open / close with INSERT key by default.
