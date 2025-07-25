@@ -20,6 +20,20 @@
 
 # GHax Changelog
 ---
+### **GHax V3.3**
+`<!> UPDATED FEATURES <!> 7/25/2025`
+```
+> Uses a random venv folder
+> Base64-encodes all .py files (main + submodules)
+> Generates a launcher.py with a custom import hook
+> Loads and runs all code from memory (no plain .py on disk)
+> Installs pyMeow manually from GitHub if needed
+> Runs silently inside the virtual environment
+```
+
+<details>
+<summary>Changelog</summary>
+
 ### **V3.2**
 `<!> UPDATED FEATURES <!> 7/22/2025`
 ```
@@ -42,10 +56,6 @@
 - Distance ESP:
   - Displayed in front of box ESP for easier readability
 ```
-
-<details>
-<summary>Changelog</summary>
-
 
 ### **V3.1**
 
