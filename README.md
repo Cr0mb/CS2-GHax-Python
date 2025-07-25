@@ -411,9 +411,11 @@ You can skip it and run GHaxV3_3.py directly if you want.
 ## Usage Instructions
 
 1. Ensure Python is installed.
-2. Run ``python start.py`` to launch the cheat. If older than V3.3 launch with GHax.py.
-3. Use the GUI Config Editor to customize settings.
-4. Enjoy cheating skids!
+2. Run this command in CMD: ``pip install keyboard requests pymem pyMeow pynput pyqt5 pywin32``
+3. Download source code .zip ``curl -L -o GHaxV3.3.zip https://github.com/Cr0mb/CS2-Cheat-Python/raw/main/GHaxV3.3.zip``.
+4. Run ``python start.py`` to launch the cheat. If older than V3.3 launch with GHax.py.
+5. Use the GUI Config Editor to customize settings.
+6. Enjoy cheating skids!
 - Menu open / close with INSERT key by default.
 
 ### IF YOU WANT TO KEEP THIS UNDETECTED
@@ -452,7 +454,6 @@ nuitka --onefile --windows-console-mode=disable --enable-plugin=pyqt5 --msvc=lat
 Make sure you launch cheat through CMD, go into script directory and type "python GHax.py" or "python3 GHax.py". This fixes issue with wallhack and watermark not showing.
 ^ Above statement did not fix watermark issues. Fixed this issue by ensuring pw_module.end_drawing() is always called once per frame, even when no entities are drawn.
 
-``pip install keyboard requests pymem pyMeow pynput pyqt5 pywin32``
 - If the cheat says that pyMeow isn't installed correctly even though you installed the pip module, you can install it directly through the source:
   - Download it here: https://github.com/qb-0/pyMeow/releases/tag/1.73.42
   - In CMD, navigate to the directory where setup.py is located.
