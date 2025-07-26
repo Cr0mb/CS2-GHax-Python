@@ -20,6 +20,20 @@
 
 # GHax Changelog
 ---
+### **GHax V3.4**
+``<!> UPDATED FEATURES <!> 7/26/2025``
+```
+> Per-weapon recoil learning (saves to aimbot_data/{weapon_id}.json)
+> Smoothed learning updates to reduce overcorrection (alpha blending)
+> Learning keys now include shot count bins (0–10+) for accuracy
+> Automatically reloads learning data when weapon changes
+> Ignores tiny corrections under 0.05 to prevent noise
+> Cleaned up old learning code and added helpful debug logs
+```
+
+<details>
+<summary>Changelog</summary>
+
 ### **GHax V3.3**
 `<!> UPDATED FEATURES <!> 7/25/2025`
 ```
@@ -30,9 +44,6 @@
 > Installs pyMeow manually from GitHub if needed
 > Runs silently inside the virtual environment
 ```
-
-<details>
-<summary>Changelog</summary>
 
 ### **V3.2**
 `<!> UPDATED FEATURES <!> 7/22/2025`
