@@ -20,7 +20,30 @@
 
 # GHax Changelog
 ---
-### **GHax V3.4**
+
+**V3.5**
+
+``<!> UPDATED FEATURES <!> 7/26/2025``
+
+```
+> Automatically runs offset_update.py with start.py
+
+> Added method is_cs2_focused to check if the CS2 window is currently focused.
+> This method uses Windows API calls via ctypes to verify the foreground window process
+> is "cs2.exe", ensuring the aimbot only runs when the game is active.
+
+> Use smoothing (EMA) for recoil learning instead of averaging many samples.
+> Fade old learning data over time to adapt better.
+> Only learn when aim changes noticeably to avoid noise.
+> Use finer shot count bins for better recoil tracking.
+> Save simpler data for faster loading and saving.
+```
+
+<details>
+<summary>Changelog</summary>
+
+**V3.4**
+
 ``<!> UPDATED FEATURES <!> 7/26/2025``
 ```
 > Per-weapon recoil learning (saves to aimbot_data/{weapon_id}.json)
@@ -31,10 +54,8 @@
 > Cleaned up old learning code and added helpful debug logs
 ```
 
-<details>
-<summary>Changelog</summary>
+**V3.3**
 
-### **GHax V3.3**
 `<!> UPDATED FEATURES <!> 7/25/2025`
 ```
 > Uses a random venv folder
@@ -45,7 +66,8 @@
 > Runs silently inside the virtual environment
 ```
 
-### **V3.2**
+**V3.2**
+
 `<!> UPDATED FEATURES <!> 7/22/2025`
 ```
 - TriggerBot Memory Read Fixes:
@@ -68,7 +90,7 @@
   - Displayed in front of box ESP for easier readability
 ```
 
-### **V3.1**
+**V3.1**
 
 `<!> UPDATED FEATURES <!> 7/20/2025`
 
@@ -92,7 +114,7 @@
 
 ---
 
-### **V3.0**
+**V3.0**
 
 ```txt
 - Changed aimbot to external mouse movement instead of writing view angles
@@ -102,7 +124,7 @@
 
 ---
 
-### **V2.7**
+**V2.7**
 
 ```txt
 - Added weapon ESP
@@ -112,7 +134,7 @@
 
 ---
 
-### **V2.6**
+**V2.6**
 
 ```txt
 - Added FOV overlay color change
@@ -122,7 +144,7 @@
 
 ---
 
-### **V2.5**
+**V2.5**
 
 ```txt
 - Complete GUI overhaul
@@ -135,7 +157,7 @@
 
 ---
 
-### **V2.4**
+**V2.4**
 
 ```txt
 - Aimbot learning system:
@@ -149,7 +171,7 @@
 
 ---
 
-### **V2.3**
+**V2.3**
 
 `<!> UPDATED FEATURES <!> 7/6/2025`
 
@@ -173,7 +195,7 @@
 
 ---
 
-### **V2.2**
+**V2.2**
 
 `<!> UPDATED FEATURES <!> 7/3/2025`
 
@@ -189,7 +211,7 @@
 
 ---
 
-### **V2.1**
+**V2.1**
 
 `<!> UPDATED FEATURES <!> 7/2/2025`
 
@@ -210,7 +232,7 @@
 
 ---
 
-### **V2.0**
+**V2.0**
 
 `<!> UPDATED FEATURES <!> 6/30/2025`
 
@@ -222,7 +244,7 @@
 
 ---
 
-### **V1.9**
+**V1.9**
 
 `<!> UPDATED FEATURES <!> 5/11/2024`
 
@@ -236,7 +258,7 @@ Class Updates:
 
 ---
 
-### **V1.8**
+**V1.8**
 
 `<!> UPDATED FEATURES <!> 5/11/2024`
 
@@ -249,7 +271,7 @@ Class Updates:
 
 ---
 
-### **V1.7**
+**V1.7**
 
 `<!> UPDATED FEATURES <!> 5/10/2024`
 
@@ -263,7 +285,7 @@ Class Updates:
 
 ---
 
-### **V1.6**
+**V1.6**
 
 `<!> UPDATED FEATURES <!> 5/8/2024`
 
@@ -276,7 +298,7 @@ Class Updates:
 
 ---
 
-### **V1.5**
+**V1.5**
 
 `<!> UPDATED FEATURES <!> 5/7/2024`
 
@@ -293,7 +315,7 @@ Class Updates:
 
 ---
 
-### **V1.4**
+**V1.4**
 
 `<!> UPDATED FEATURES <!> 5/3/2024`
 
@@ -307,7 +329,7 @@ Class Updates:
 
 ---
 
-### **V1.3**
+**V1.3**
 
 `<!> UPDATED FEATURES <!> 4/23/2024`
 
