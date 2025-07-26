@@ -16,7 +16,8 @@
 - [**V2.3 Beta Showcase:**](https://www.youtube.com/watch?v=3G2ZPU6SGUg) https://www.youtube.com/watch?v=3G2ZPU6SGUg  
 - [**V2.3 Full Release:**](https://www.youtube.com/watch?v=bwF8vC5Av_w) https://www.youtube.com/watch?v=bwF8vC5Av_w  
 - [**V2.4 Release:**](https://www.youtube.com/watch?v=JA1jtwPHsLE&t=25s) https://www.youtube.com/watch?v=JA1jtwPHsLE&t=25s  
-- [**V3.0 Release:**](https://www.youtube.com/watch?v=hjZrGECIhu4) https://www.youtube.com/watch?v=hjZrGECIhu4  
+- [**V3.0 Release:**](https://www.youtube.com/watch?v=hjZrGECIhu4) https://www.youtube.com/watch?v=hjZrGECIhu4
+- [**V3.1 - V3.5 Release:**](https://www.youtube.com/watch?v=rbMm-uEVN2U&t=228s) https://www.youtube.com/watch?v=rbMm-uEVN2U&t=228s
 
 **UnknownCheats Forum:** https://www.unknowncheats.me/forum/counter-strike-2-releases/633657-cs2-python-cheat.html
 
