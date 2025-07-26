@@ -23,6 +23,18 @@
 # GHax Changelog
 ---
 
+**V3.6**
+
+``<!> UPDATED FEATURES <!> 7/26/2025``
+
+```
+> Replaced base64 with Fernet (AES 128-bit under the hood).
+> Generated a random key each run.
+> Stored encrypted source code using that key.
+> Wrote the key into the launcher — unique per launch.
+> Launcher decrypts code at runtime using the unique key.
+```
+
 **V3.5**
 
 ``<!> UPDATED FEATURES <!> 7/26/2025``
