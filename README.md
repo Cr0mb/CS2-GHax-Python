@@ -345,7 +345,7 @@ Class Updates:
 </details>
 
 
-# GHax V3.2 Feature List
+# GHax Feature List
 
 <details>
 <summary><strong>ESP Visuals</strong></summary>
