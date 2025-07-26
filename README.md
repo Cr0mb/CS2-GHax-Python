@@ -18,6 +18,8 @@
 - [**V2.4 Release:**](https://www.youtube.com/watch?v=JA1jtwPHsLE&t=25s) https://www.youtube.com/watch?v=JA1jtwPHsLE&t=25s  
 - [**V3.0 Release:**](https://www.youtube.com/watch?v=hjZrGECIhu4) https://www.youtube.com/watch?v=hjZrGECIhu4  
 
+UnknownCheats Forum: https://www.unknowncheats.me/forum/counter-strike-2-releases/633657-cs2-python-cheat.html
+
 # GHax Changelog
 ---
 
