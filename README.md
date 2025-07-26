@@ -382,7 +382,7 @@ Class Updates:
 | Deathmatch Mode          | Enables aimbot in DM scenarios            |
 | Show FOV                 | Visualize aim field                       |
 | Aim Nearest Bone         | Targets head or chest                     |
-| Aimbot Learning          | Adaptive accuracy over time               |
+| Aimbot Learning          | Adaptive accuracy over time based on weapon|
 | Velocity Prediction      | Predicts moving targets                   |
 | Enable RCS               | Recoil control system                     |
 | Aim FOV                  | Limit aim range                           |
