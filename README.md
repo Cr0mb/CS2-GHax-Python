@@ -1,5 +1,7 @@
 # CS2 Python Cheat Features
 
+**Community Discord:** https://discord.gg/qKfmaA7FFJ
+
 **GUI**  
 ![GUI Image](https://i.imgur.com/XiEJzhV.png)
 
