@@ -27,7 +27,7 @@
 - **Integration Aimbot Visualization**
 
 I have created a script that loads recoil and compensation data for multiple weapons from JSON files that comes with V3.4+. ``aim_visualization.py``
-Generates an interactive Plotly graph with a dropdown menu in the browser allowing you to switch between weapons and visualize their recoil patterns with a nicely.
+Generates an interactive Plotly graph with a dropdown menu in the browser allowing you to switch between weapons and visualize their recoil patterns.
 
 **V3.6**
 
