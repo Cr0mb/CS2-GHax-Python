@@ -31,6 +31,8 @@
 I have created a script that loads recoil and compensation data for multiple weapons from JSON files that comes with V3.4+. ``aim_visualization.py``
 Generates an interactive Plotly graph with a dropdown menu in the browser allowing you to switch between weapons and visualize their recoil patterns.
 
+<img width="1340" height="669" alt="image" src="https://github.com/user-attachments/assets/746afff2-9949-45ca-b736-b7cf684e22d4" />
+
 **V3.6**
 
 ``<!> UPDATED FEATURES <!> 7/26/2025``
