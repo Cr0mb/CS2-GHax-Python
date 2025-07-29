@@ -33,6 +33,12 @@ Generates an interactive Plotly graph with a dropdown menu in the browser allowi
 
 <img width="1340" height="669" alt="image" src="https://github.com/user-attachments/assets/746afff2-9949-45ca-b736-b7cf684e22d4" />
 
+**V3.6.1**
+``<!> UPDATED FEATURES <!> 7/29/2025``
+```
+> Updated offsets
+```
+
 **V3.6**
 
 ``<!> UPDATED FEATURES <!> 7/26/2025``
