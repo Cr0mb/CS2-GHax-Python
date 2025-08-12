@@ -1,6 +1,7 @@
 # CS2 Python Cheat Features
 
 **Community Discord:** https://discord.gg/qKfmaA7FFJ
+
 **Donate:** https://paypal.me/GHaxLegit?country.x=US&locale.x=en_US
 
 **GUI**  
