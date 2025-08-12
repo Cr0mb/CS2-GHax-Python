@@ -4,6 +4,8 @@
 
 **Donate:** https://paypal.me/GHaxLegit?country.x=US&locale.x=en_US
 
+**How to Install:** https://www.youtube.com/watch?v=Ma4yRdsi1cc
+
 **GUI**  
 ![GUI Image](https://i.imgur.com/XiEJzhV.png)
 
