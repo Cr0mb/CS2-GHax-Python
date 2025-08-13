@@ -478,7 +478,7 @@ You can skip it and run GHaxV3_3.py directly if you want.
 ## Usage Instructions
 
 1. Ensure Python is installed.
-2. Run this command in CMD: ``pip install keyboard requests pymem pyMeow pynput pyqt5 pywin32``
+2. Run this command in CMD: ``pip install PyQt5 cryptography keyboard psutil pyMeow pymem pynput requests pywin32``
 3. Download source code .zip ``curl -L -o GHaxV3.3.zip https://github.com/Cr0mb/CS2-Cheat-Python/raw/main/GHaxV3.3.zip``.
 4. Run ``python start.py`` to launch the cheat. If older than V3.3 launch with GHax.py.
 5. Use the GUI Config Editor to customize settings.
